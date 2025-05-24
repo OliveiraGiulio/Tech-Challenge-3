@@ -1,7 +1,9 @@
 dashboards/
-**/node_modules/
-**/.next/
 .scripts/
 .git/
-README.md
 *.md
+.next/
+*.cache/
+node_modules/
+public/
+app/

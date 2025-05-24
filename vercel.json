@@ -19,6 +19,5 @@
   ],
   "routes": [
     { "src": "/predict", "dest": "api/main.py" }
-  ],
-  "excludeFiles": "{.next,*.cache,node_modules,public,app}/**"
+  ]
 }
