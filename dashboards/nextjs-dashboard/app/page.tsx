@@ -1,6 +1,8 @@
 // app/(dashboard)/page.jsx  – Next.js 13+ “/app” router
 "use client";
 
+import { ChangeEvent } from "react";
+import { FormEvent } from "react";
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -28,11 +30,11 @@ export default function Dashboard() {
     ST_Slope: "Flat",
   });
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => setForm({ ...form, [e.target.name]: e.target.value });
 
   const API = "http://127.0.0.1:8000/predict"; 
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const res = await fetch(API, {
       method: "POST",
