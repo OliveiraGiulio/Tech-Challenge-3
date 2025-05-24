@@ -7,10 +7,8 @@
         "runtime": "python3.12",
         "maxDuration": 30,
         "memory": 512,
-        "includeFiles": [
-          "models/heart_model.pkl"
-        ],
-        "excludeFiles": "{dashboards/**,node_modules/**,*.cache/**}"
+        "includeFiles": ["models/heart_model.pkl"],
+        "excludeFiles": "{dashboards/**,.next/**,node_modules/**,scripts/**,.venv/**}"
       }
     },
     {
@@ -18,7 +16,5 @@
       "use": "@vercel/next"
     }
   ],
-  "routes": [
-    { "src": "/predict", "dest": "api/main.py" }
-  ]
+  "routes": [{ "src": "/predict", "dest": "api/main.py" }]
 }
