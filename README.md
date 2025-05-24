@@ -9,25 +9,6 @@
 
 ---
 
-## ✨ Features
-
-| Layer               | Tech            | Highlights |
-| ------------------- | -------------- | ---------- |
-| **API**             | FastAPI (Python 3.12) | Fully typed, `/predict` returns probability & flag in \<10 ms |
-| **ML model**        | Scikit-learn Random Forest | Pipeline includes imputers & one-hot; model persisted with `joblib` |
-| **Data ingest**     | Kaggle → Postgres (Neon/Supabase) | `scripts/load_to_db.py` is idempotent (`ON CONFLICT`) |
-| **Dashboard**       | Next.js 15 (*app router*), Tailwind, shadcn/ui, Recharts | Form → fetch → live table & probability line-chart |
-| **Architecture**    | Clean (Ports & Adapters) | `infra/`, `domain/`, `services/`, `api/`, `dashboards/` |
-| **Deployment**      | Vercel (Serverless Functions) | One repo ⇒ one click deploy |
-
----
-
-
----
-
-
----
-
 ## 🚀 Quick start (local)
 
 ### 1 Prerequisites
