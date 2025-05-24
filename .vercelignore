@@ -1,9 +1,2 @@
-dashboards/
-.scripts/
 .git/
 *.md
-.next/
-*.cache/
-node_modules/
-public/
-app/
