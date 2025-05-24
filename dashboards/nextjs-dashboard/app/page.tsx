@@ -2,15 +2,12 @@
 "use client";
 
 import { useState } from "react";
-import useSWR from "swr";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 import { HeartPulse, TrendingUp } from "lucide-react";
-
-const fetcher = (url) => fetch(url).then((r) => r.json());
 
 export default function Dashboard() {
   // local list of submissions for the demo
