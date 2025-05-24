@@ -84,7 +84,7 @@ export default function Dashboard() {
       Oldpeak: Number(form.Oldpeak) || null,
     } as const;
 
-    const res = await fetch(`${API_ROOT}/predict`, {
+    const res = await fetch("http://127.0.0.1:8000/predict", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
