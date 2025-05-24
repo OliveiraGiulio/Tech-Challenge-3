@@ -1,2 +1,8 @@
-.git/
-*.md
+.venv/
+dashboards/
+scripts/
+notebooks/
+*.ipynb
+*.csv
+*.joblib
+*.log
