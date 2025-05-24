@@ -6,7 +6,10 @@
       "config": {
         "runtime": "python3.12",
         "maxDuration": 30,
-        "memory": 512
+        "memory": 512,
+        "includeFiles": [
+          "models/heart_model.pkl"
+        ]
       }
     },
     {

@@ -1,0 +1,7 @@
+dashboards/
+**/node_modules/
+**/.next/
+.scripts/
+.git/
+README.md
+*.md
