@@ -4,12 +4,9 @@
 > A production-ready mini-platform that predicts the probability of heart
 > disease from basic clinical parameters and shows the results on an
 > interactive dashboard.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import)
-
 ---
 
-## 🚀 Quick start (local)
+## Quick start (local)
 
 ### 1 Prerequisites
 
@@ -53,7 +50,7 @@ uvicorn api.main:app --reload --port 8000
 
 # in another
 cd dashboards/nextjs-dashboard
-echo NEXT_PUBLIC_API_URL=http://127.0.0.1:8000 > .env.local
+npm run dev
 npm run dev
 
 ```
