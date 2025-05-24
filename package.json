@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "vercel-build": "python scripts/init_db.py && python scripts/load_to_db.py && python scripts/train.py"
+  }
+}
