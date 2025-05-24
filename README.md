@@ -51,7 +51,12 @@ uvicorn api.main:app --reload --port 8000
 # in another
 cd dashboards/nextjs-dashboard
 npm run dev
-npm run dev
-
 ```
+### 6 Go to the localhost API and Dashboard
+## API -> http://127.0.0.1:8000/docs#/default/predict_predict_post
+## Dashboard -> http://localhost:3000/
+
+### 7 Fill the dashboard with data
+![image](https://github.com/user-attachments/assets/59526ce5-8e64-4864-ab88-9fa1f0d2ab79)
+
 
